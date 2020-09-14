@@ -3,6 +3,7 @@
 {"value": "Appraisal strategy","text": "Appraisal strategy"},
 {"value": "Decision making with uncertainty","text": "Decision making with uncertainty"},
 {"value": "Flood costs","text": "Flood costs"},
+{"value": "Flood risk assessment","text": "Flood risk assessment"},
 {"value": "Flood risk governance","text": "Flood risk governance"},
 {"value": "Health, safety and wellbeing","text": "Health, safety and wellbeing"},
 {"value": "Investment","text": "Investment"},
@@ -12,6 +13,5 @@
 {"value": "Resilient infrastructure","text": "Resilient infrastructure"},
 {"value": "Spatial planning","text": "Spatial planning"},
 {"value": "Strategy and planning","text": "Strategy and planning"},
-{"value": "Sustainable drainage systems","text": "Sustainable drainage systems"},
-{"value": "Flood risk assessment","text": "Flood risk assessment"}
+{"value": "Sustainable drainage systems","text": "Sustainable drainage systems"}
 ] %}

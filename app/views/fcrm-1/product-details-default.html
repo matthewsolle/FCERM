@@ -52,12 +52,13 @@
 
       <div class="gir_meta">
 
-        {% if assets!="" %}<p>Building and maintaining FCERM assets: <b><em>{{ assets }}</em></b></p>{% endif %}
+        
         {% if datatype!="" %}<p>Data collection and analysis: <b><em>{{ datatype }}</em></b></p>{% endif %}
         {% if environmental!="" %}<p>Environmental management and sustainability:  <b><em>{{ environmental }}</em></b></p>{% endif %}
-        {% if flooding!="" %}<p>Preparing, responding and recovering from flooding:  <b><em>{{ flooding }}</em></b></p>{% endif %}
-        {% if policy!="" %}<p>Policy, strategy and governance: <b><em>{{ policy }}</em></b></p>{% endif %}
         {% if sources!="" %}<p>Physical processes and sources of flooding: <b><em>{{ sources }}</em></b></p>{% endif %}
+        {% if policy!="" %}<p>Policy, governance and funding: <b><em>{{ policy }}</em></b></p>{% endif %}
+        {% if flooding!="" %}<p>Preparing, responding and recovering from flooding:  <b><em>{{ flooding }}</em></b></p>{% endif %}
+        {% if assets!="" %}<p>Whole life asset management: <b><em>{{ assets }}</em></b></p>{% endif %}
 
         <p>Published: <b>{{ date }}</b></p>
       </div>

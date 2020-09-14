@@ -1,11 +1,11 @@
 {% set datatype = [
 {"value": "Artificial intelligence","text": "Artificial intelligence"},
-{"value": "Machine learning","text": "Machine learning"},
-{"value": "Big data","text": "Big data"},
-{"value": "Non-stationarity","text": "Non-stationarity"},
-{"value": "Monitoring and detection","text": "Monitoring and detection"},
-{"value": "Flood forecasting","text": "Flood forecasting"},
+{"value": "Asset monitoring","text": "Asset monitoring"},
 {"value": "Asset performance","text": "Asset performance"},
+{"value": "Big data","text": "Big data"},
 {"value": "Deterioration","text": "Deterioration"},
-{"value": "Asset monitoring","text": "Asset monitoring"}
+{"value": "Flood forecasting","text": "Flood forecasting"},
+{"value": "Machine learning","text": "Machine learning"},
+{"value": "Monitoring and detection","text": "Monitoring and detection"},
+{"value": "Non-stationarity","text": "Non-stationarity"}
 ] %}

@@ -10,34 +10,6 @@
 <div class="gir_filterbox">
 
 
-
-<!-- assets -->
-  <details class="govuk-details" data-module="govuk-details">
-    <summary class="govuk-details__summary">
-      <span class="govuk-details__summary-text">
-        Building and maintaining FCERM assets
-      </span>
-    </summary>
-    <div class="govuk-details__text">
-
-      {% from "../data/lists/assets.json" import assets %}
-
-      {{ govukCheckboxes({
-                idPrefix: "assets",
-                name: "assets",
-                classes: "govuk-checkboxes--small",
-                fieldset: {
-                  legend: {
-                    text: "",
-                    isPageHeading: false,
-                    classes: "govuk-fieldset__legend--s"
-                  }
-                },
-                items: assets
-              }) }}
-    </div>
-  </details>
-
   <!-- datatype -->
     <details class="govuk-details" data-module="govuk-details">
       <summary class="govuk-details__summary">
@@ -93,6 +65,62 @@
         </div>
       </details>
 
+      <!-- sources -->
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Physical processes and sources of flooding
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <!-- Registers -->
+                {% from "../data/lists/sources.json" import sources %}
+
+                {{ govukCheckboxes({
+                          idPrefix: "sources",
+                          name: "sources",
+                          classes: "govuk-checkboxes--small",
+                          fieldset: {
+                            legend: {
+                              text: "",
+                              isPageHeading: false,
+                              classes: "govuk-fieldset__legend--s"
+                            }
+                          },
+                          items: sources
+                        }) }}
+              </div>
+            </details>
+
+
+             <!-- policy -->
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Policy, governance and funding
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <!-- Registers -->
+              {% from "../data/lists/policy.json" import policy %}
+
+              {{ govukCheckboxes({
+                        idPrefix: "policy",
+                        name: "policy",
+                        classes: "govuk-checkboxes--small",
+                        fieldset: {
+                          legend: {
+                            text: "",
+                            isPageHeading: false,
+                            classes: "govuk-fieldset__legend--s"
+                          }
+                        },
+                        items: policy
+                      }) }}
+            </div>
+          </details>
+
+
       <!-- flooding -->
         <details class="govuk-details" data-module="govuk-details">
           <summary class="govuk-details__summary">
@@ -119,63 +147,34 @@
                     }) }}
           </div>
         </details>
+        
 
+            <!-- assets -->
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Whole life asset management
+      </span>
+    </summary>
+    <div class="govuk-details__text">
 
-        <!-- policy -->
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Policy, strategy and governance
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              <!-- Registers -->
-              {% from "../data/lists/policy.json" import policy %}
+      {% from "../data/lists/assets.json" import assets %}
 
-              {{ govukCheckboxes({
-                        idPrefix: "policy",
-                        name: "policy",
-                        classes: "govuk-checkboxes--small",
-                        fieldset: {
-                          legend: {
-                            text: "",
-                            isPageHeading: false,
-                            classes: "govuk-fieldset__legend--s"
-                          }
-                        },
-                        items: policy
-                      }) }}
-            </div>
-          </details>
-
-
-
-          <!-- sources -->
-            <details class="govuk-details" data-module="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  Physical processes and sources of flooding
-                </span>
-              </summary>
-              <div class="govuk-details__text">
-                <!-- Registers -->
-                {% from "../data/lists/sources.json" import sources %}
-
-                {{ govukCheckboxes({
-                          idPrefix: "sources",
-                          name: "sources",
-                          classes: "govuk-checkboxes--small",
-                          fieldset: {
-                            legend: {
-                              text: "",
-                              isPageHeading: false,
-                              classes: "govuk-fieldset__legend--s"
-                            }
-                          },
-                          items: sources
-                        }) }}
-              </div>
-            </details>
+      {{ govukCheckboxes({
+                idPrefix: "assets",
+                name: "assets",
+                classes: "govuk-checkboxes--small",
+                fieldset: {
+                  legend: {
+                    text: "",
+                    isPageHeading: false,
+                    classes: "govuk-fieldset__legend--s"
+                  }
+                },
+                items: assets
+              }) }}
+    </div>
+  </details>
 
 
 </div>
