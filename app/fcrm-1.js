@@ -37,37 +37,28 @@ function findReport(reportNumber) {
 
 function filterReports(searchText,assets,datatype,environmental,flooding,policy,sources) {
     searchText = searchText.toLowerCase()
-
     let reportData = getReportData('reports')
-
     if (searchText) {
         reportData = reportData.filter(element => element[searchColumn].toLowerCase().includes(searchText,-1))
     }
-
     if (assets != '_unchecked') {
         reportData = reportData.filter(element => assets.includes(element.assets))
     }
-
     if (datatype != '_unchecked') {
-        reportData = reportData.filter(element => assets.includes(element.datatype))
+        reportData = reportData.filter(element => datatype.includes(element.datatype))
     }
-
     if (environmental != '_unchecked') {
-        reportData = reportData.filter(element => assets.includes(element.environmental))
+        reportData = reportData.filter(element => environmental.includes(element.environmental))
     }
-
     if (flooding != '_unchecked') {
-        reportData = reportData.filter(element => assets.includes(element.flooding))
+        reportData = reportData.filter(element => flooding.includes(element.flooding))
     }
-
     if (policy != '_unchecked') {
-        reportData = reportData.filter(element => assets.includes(element.policy))
+        reportData = reportData.filter(element => policy.includes(element.policy))
     }
-
     if (sources != '_unchecked') {
         reportData = reportData.filter(element => sources.includes(element.sources))
     }
-
     return reportData
 }
 
