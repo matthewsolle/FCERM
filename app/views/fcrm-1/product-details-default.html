@@ -26,7 +26,7 @@
         <a class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="false">
-        <a class="govuk-breadcrumbs__link" aria-current="false" href="/{{folder}}/search-results_spec_pub-default?assets=_unchecked&datatype=_unchecked&environmental=_unchecked&flooding=_unchecked&policy=_unchecked&sources=_unchecked&name=">Flood and coastal erosion risk management reports</a>
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="/{{folder}}/search-results_spec_pub-default?assets=_unchecked&datatype=_unchecked&environmental=_unchecked&flooding=_unchecked&status=_unchecked&policy=_unchecked&sources=_unchecked&name=">Flood and coastal erosion risk management reports</a>
       </li>
     </ol>
   </div>
@@ -59,6 +59,7 @@
         {% if policy!="" %}<p>Policy, governance and funding: <b><em>{{ policy }}</em></b></p>{% endif %}
         {% if flooding!="" %}<p>Preparing, responding and recovering from flooding:  <b><em>{{ flooding }}</em></b></p>{% endif %}
         {% if assets!="" %}<p>Whole life asset management: <b><em>{{ assets }}</em></b></p>{% endif %}
+        {% if status!="" %}<p>Status: <b><em>{{ status }}</em></b></p>{% endif %}
 
         <p>Published: <b>{{ date }}</b></p>
       </div>

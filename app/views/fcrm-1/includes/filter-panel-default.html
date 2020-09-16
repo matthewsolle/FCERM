@@ -26,5 +26,7 @@
 
     {% if data.sources | length != 0 %}<span class="govuk-body gir-filter"><span class="govuk-!-font-weight-bold">Physical processes and sources of flooding</span> <span class="gir-filtername">{{ data.sources | join(', ' ) }}</span></span>{% endif %}
 
+    {% if data.status | length != 0 %}<span class="govuk-body gir-filter"><span class="govuk-!-font-weight-bold">Status</span> <span class="gir-filtername">{{ data.status }}</span></span>{% endif %}
+
 </div>
 {% endif %}
