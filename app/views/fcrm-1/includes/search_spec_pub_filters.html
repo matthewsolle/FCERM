@@ -203,4 +203,36 @@
     </div>
   </details>
 
+  <!-- date -->
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Date
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+
+      
+
+      {{ govukInput({
+  label: {
+    text: "Published after"
+  },
+  classes: "govuk-input--width-15",
+  id: "width-15",
+  name: "width-15"
+}) }}
+
+{{ govukInput({
+  label: {
+    text: "Published before"
+  },
+  classes: "govuk-input--width-15",
+  id: "width-15",
+  name: "width-15"
+}) }}
+
+    </div>
+  </details>
+
 </div>
