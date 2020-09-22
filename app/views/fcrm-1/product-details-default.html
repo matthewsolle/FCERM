@@ -122,18 +122,31 @@
           <p>
             <a href="{{ doc9url }}">{{ doc9 }}</a>
           </p>
-      {% endif %}
+
+          {% endif %}
+
+          <p>These files may not be suitable for users of assistive technology.</p>
+
+          <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Request an accessible format
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    If you use assistive technology (such as a screen reader) and need a version of this document in a more accessible format, please email enquiries@environment-agency.gov.uk. Please tell us what format you need. It will help us if you say what assistive technology you use. 
+  </div>
+</details>
+
+      
+
+
     
 
       <h2 class="govuk-heading-m" id="details">Details</h2>
 
       {{ details | safe }}
 
-      {% if video1 != "" %}
-          <p>
-            <a href="{{ video1url }}">{{ video1 }}</a>
-          </p>
-      {% endif %}
 
       <p class="gir_small">
         Published {{ date }}
