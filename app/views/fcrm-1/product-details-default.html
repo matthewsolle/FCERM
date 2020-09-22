@@ -70,7 +70,8 @@
       <h2 class="govuk-heading-m" id="docs">Documents</h2>
 
       {% if doc1 != "" %}
-          <p>
+         
+        <p>
             <a href="{{ doc1url }}">{{ doc1 }}</a>
           </p>
       {% endif %}
@@ -81,9 +82,58 @@
           </p>
       {% endif %}
 
+      {% if doc3 != "" %}
+          <p>
+            <a href="{{ doc3url }}">{{ doc3 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc4 != "" %}
+          <p>
+            <a href="{{ doc4url }}">{{ doc4 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc5 != "" %}
+          <p>
+            <a href="{{ doc5url }}">{{ doc5 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc6 != "" %}
+          <p>
+            <a href="{{ doc6url }}">{{ doc6 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc7 != "" %}
+          <p>
+            <a href="{{ doc7url }}">{{ doc7 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc8 != "" %}
+          <p>
+            <a href="{{ doc8url }}">{{ doc8 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc9 != "" %}
+          <p>
+            <a href="{{ doc9url }}">{{ doc9 }}</a>
+          </p>
+      {% endif %}
+    
+
       <h2 class="govuk-heading-m" id="details">Details</h2>
 
       {{ details | safe }}
+
+      {% if video1 != "" %}
+          <p>
+            <a href="{{ video1url }}">{{ video1 }}</a>
+          </p>
+      {% endif %}
 
       <p class="gir_small">
         Published {{ date }}
