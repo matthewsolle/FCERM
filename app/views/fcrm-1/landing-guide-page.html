@@ -39,13 +39,7 @@
         <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment">Environment</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="false">
-        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment/food-and-farming">Food and farming</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="false">
-        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment/producing-distributing-food">Producing and distributing food</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="false">
-        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment/producing-distributing-food-food-labelling">Food labelling and safety</a>
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment/food-and-farming">River maintenance, flooding and coastal erosion</a>
       </li>
     </ol>
   </div>
@@ -86,7 +80,7 @@
         <div class="govuk-grid-column-two-thirds metadata-column">
             <div class="app-c-publisher-metadata" lang="en">
         <div class="app-c-published-dates " lang="en">
-        Published 12 December 2020
+        Published 12 September 2020
     </div>
 
           <div class="app-c-publisher-metadata__other">
@@ -129,16 +123,29 @@
             The current 6 year flood and coastal erosion risk management (FCERM) investment programme runs from 1 April 2015 to 31 March 2021. The Environment Agency produces regular research reports to explain the work we are doing.
           </p>
 
-            {% set linkHref = "/" + folder + "/search-results_spec_pub-default?assets=_unchecked&datatype=_unchecked&environmental=_unchecked&flooding=_unchecked&status=_unchecked&policy=_unchecked&sources=_unchecked&name=" %}
+            
 
-            {{ govukButton({
-              text: "Find a report",
-              href: linkHref
-            }) }}
+
+
+            <ul class="govuk-list">
+              <li><a href="/{{folder}}/{{linkAction}}/search-results_spec_pub-default?assets=_unchecked&datatype=_unchecked&environmental=_unchecked&flooding=_unchecked&status=_unchecked&policy=_unchecked&sources=_unchecked&name=">
+                Search for a flood and coastal erosion risk management report</a></li>
+            </ul>
+          
+
+
+
+
+
+
+
+
 
             <p class="govuk-body">
             We develop projects to reduce flooding and coastal erosion by working with local authorities, internal drainage boards and local communities.
           </p>
+
+
 
     </div>
 
