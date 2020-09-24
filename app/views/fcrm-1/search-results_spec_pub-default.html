@@ -56,15 +56,7 @@ Flood and coastal erosion risk management
             <div class="govuk-grid-column-two-thirds">
 
             <!-- Check if filters have been applied -->
-            {% set filterLength
-              = data.assets | length
-              + data.datatype | length
-              + data.environmental | length
-              + data.flooding | length
-              + data.policy | length
-              + data.sources | length
-              + data.status | length
-              %}
+            {% set filterLength = data.assets | length + data.datatype | length + data.environmental | length + data.flooding | length + data.policy | length + data.sources | length + data.status | length %}
 
             {% include "./includes/filter-panel-default.html" %}
 
@@ -77,7 +69,7 @@ Flood and coastal erosion risk management
                         {{ result.summary }}
                       </p>
 
-                      {% if result.assets!="" %}<p class="gir_very_small">Whole ife asset management: {{ result.assets }}</p>{% endif %}
+                      {% if result.assets!="" %}<p class="gir_very_small">Whole life asset management: {{ result.assets }}</p>{% endif %}
                       {% if result.datatype!="" %}<p class="gir_very_small">Data collection and analysis: {{ result.datatype }}</p>{% endif %}
                       {% if result.environmental!="" %}<p class="gir_very_small">Environmental management and sustainability:  {{ result.environmental }}</p>{% endif %}
                       {% if result.flooding!="" %}<p class="gir_very_small">Preparing, responding and recovering from flooding:  {{ result.flooding }}</p>{% endif %}
@@ -85,9 +77,7 @@ Flood and coastal erosion risk management
                       {% if result.sources!="" %}<p class="gir_very_small">Physical processes and sources of flooding: {{ result.sources }}</p>{% endif %}
                       {% if result.status!="" %}<p class="gir_very_small">Status: {{ result.status }}</p>{% endif %}
 
-                      <p class="gir_very_small">
-                        Date: {{ result.date }}
-                      </p>
+                      <p class="gir_very_small">Date: {{ result.date }}</p>
 
 
                 {% endif %}
