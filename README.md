@@ -8,7 +8,7 @@
 Page parts (eg filters) are kept in /fcrm-1/includes/.
 
 Filter lists are in /fcrm-1/data/lists.
-(The code for this is constructed from the a spreadsheet)
+(The code for this is constructed from a spreadsheet)
 
 IMPORTANT: If you re-make the filters, remove the comma after the last item in each filter list
 
@@ -27,8 +27,7 @@ The actual search and routing happens in /fcrm-1.js
 ## Limitations of v1
 ------------------------------
 
-1. When filters are selected, the search control needs to be selected to display the results (see a live version of a Specialist Publisher finder to see how it will actually work 
-Search terms only works on title.
-
-Only the first 'Building and maintaining FCERM assets' will work.
-The content pages are only 'tagged' with one tag each. That means that filtering works, but only produces one page per option in 'Building and maintaining FCERM assets'.
+1. When filters are selected, the search control needs to be selected to display the results (see a live version of a Specialist Publisher finder to see how it will actually work https://www.gov.uk/raib-reports)
+2. More than one filter can be selected (but to work they have to be selected at the same time)
+3. Search terms work on report title but not on filter
+4. To clear filters and return to default view (no filters selected), select search control again
