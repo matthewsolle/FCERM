@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% set tocPage = true %}
+
+{% block pageTitle %}
+  {{ title }} report
+{% endblock %}
+
+{% block header %}
+  {% include "includes/cookie-banner.html" %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: " ",
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block beforeContent %}
+<!-- no phase banner or back link -->
+<div class="gem-c-contextual-breadcrumbs">
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="/{{folder}}/search-results_spec_pub-default?topics=_unchecked&themes=_unchecked&status=_unchecked&name=">Flood and coastal erosion risk management reports</a>
+      </li>
+    </ol>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">{{ title }}</h1>
+
+      <p class="gir_intro">
+        {{ summary }}
+      </p>
+
+      <p class="gir_small">
+        Published {{ date }}<br>
+        From: <a href="#">Environment Agency</a>
+      </p>
+
+      <div class="gir_meta">
+
+        
+        {% if themes!="" %}<p>Themes: <b><em>{{ themes }}</em></b></p>{% endif %}
+        {% if topics!="" %}<p>Topics: <b><em>{{ topics }}</em></b></p>{% endif %}
+        {% if status!="" %}<p>Status: <b><em>{{ status }}</em></b></p>{% endif %}
+        <p>Project completion date: <b>{{ date }}</b></p>
+      </div>
+
+
+<!-- <div id="toc" class="toc"></div> -->
+
+      <h2 class="govuk-heading-m" id="docs">Documents</h2>
+
+      {% if doc1 != "" %}
+         
+        <p>
+            <a href="{{ doc1url }}">{{ doc1 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc2 != "" %}
+          <p>
+            <a href="{{ doc2url }}">{{ doc2 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc3 != "" %}
+          <p>
+            <a href="{{ doc3url }}">{{ doc3 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc4 != "" %}
+          <p>
+            <a href="{{ doc4url }}">{{ doc4 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc5 != "" %}
+          <p>
+            <a href="{{ doc5url }}">{{ doc5 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc6 != "" %}
+          <p>
+            <a href="{{ doc6url }}">{{ doc6 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc7 != "" %}
+          <p>
+            <a href="{{ doc7url }}">{{ doc7 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc8 != "" %}
+          <p>
+            <a href="{{ doc8url }}">{{ doc8 }}</a>
+          </p>
+      {% endif %}
+
+      {% if doc9 != "" %}
+          <p>
+            <a href="{{ doc9url }}">{{ doc9 }}</a>
+          </p>
+
+          {% endif %}
+
+          <p>These files may not be suitable for users of assistive technology.</p>
+
+          <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Request an accessible format
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    If you use assistive technology (such as a screen reader) and need a version of this document in a more accessible format, please email enquiries@environment-agency.gov.uk. Please tell us what format you need. It will help us if you say what assistive technology you use. 
+  </div>
+</details>
+
+      
+
+
+    
+
+      <h2 class="govuk-heading-m" id="details">Details</h2>
+
+      {{ details | safe }}
+
+
+      <p class="gir_small">
+        Published {{ date }}
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

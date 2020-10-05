@@ -1,0 +1,120 @@
+<div>
+  <label class="govuk-label" for="search">
+    Search
+  </label>
+  <input class="govuk-input" style="width:250px;" id="search" name="name" type="text" value="{{ data.name }}">
+  <button class="govuk-button gem-c-search__submit gem-c-search--on-white" data-module="govuk-button">O</button>
+</div><!-- END govuk-form-group -->
+
+<!-- Product type -->
+<div class="gir_filterbox">
+
+
+  <!-- themes -->
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Themes
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <!-- Registers -->
+        {% from "../data/lists/themes.json" import themes %}
+
+        {{ govukCheckboxes({
+                  idPrefix: "themes",
+                  name: "themes",
+                  classes: "govuk-checkboxes--small",
+                  fieldset: {
+                    legend: {
+                      text: "",
+                      isPageHeading: false,
+                      classes: "govuk-fieldset__legend--s"
+                    }
+                  },
+                  items: themes
+                }) }}
+      </div>
+    </details>
+
+
+
+            <!-- topics -->
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Topics
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+
+      {% from "../data/lists/topics.json" import topics %}
+
+      {{ govukSelect({
+                idPrefix: "topics",
+                name: "topics",
+                items: topics
+              }) }}
+    </div>
+  </details>
+
+<!-- status -->
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Status
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+
+      {% from "../data/lists/status.json" import status %}
+
+      {{ govukCheckboxes({
+                idPrefix: "status",
+                name: "status",
+                classes: "govuk-checkboxes--small",
+                fieldset: {
+                  legend: {
+                    text: "",
+                    isPageHeading: false,
+                    classes: "govuk-fieldset__legend--s"
+                  }
+                },
+                items: status
+              }) }}
+    </div>
+  </details>
+
+  <!-- date -->
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Date range
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+
+      
+
+      {{ govukInput({
+  label: {
+    text: "Published after"
+  },
+  classes: "govuk-input--width-15",
+  id: "width-15",
+  name: "width-15"
+}) }}
+
+{{ govukInput({
+  label: {
+    text: "Published before"
+  },
+  classes: "govuk-input--width-15",
+  id: "width-15",
+  name: "width-15"
+}) }}
+
+    </div>
+  </details>
+
+</div>

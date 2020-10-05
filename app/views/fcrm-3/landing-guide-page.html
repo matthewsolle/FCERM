@@ -1,0 +1,197 @@
+
+{% set tocPage = true %}
+
+{% extends "layout.html" %}
+
+
+{% block head %}
+<link href="/public/stylesheets/guide-fonts.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/public/stylesheets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/core-layout.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/publisher.css" media="screen" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+
+
+{% block header %}
+{% include "../includes/header-publisher.html" %}
+{% endblock %}
+
+
+{% block beforeContent %}
+
+<div id="global-header-bar"></div>
+
+
+<div class="gem-c-contextual-breadcrumbs">
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment">Environment</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="https://www.gov.uk/environment/food-and-farming">River maintenance, flooding and coastal erosion</a>
+      </li>
+    </ol>
+  </div>
+
+
+</div>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="gem-c-title govuk-x!-margin-top-8 govuk-!-margin-bottom-8">
+          <p class="gem-c-title__context">
+            Guidance
+          </p>
+        <h1 class="gem-c-title__text gem-c-title__text--long">
+          Flood and coastal erosion risk management reports
+        </h1>
+      </div>
+
+      <p class="gem-c-lead-paragraph ">
+        The Environment Agency manages government investment to reduce flood risk and coastal erosion in England.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="metadata-logo-wrapper">
+        <div class="govuk-grid-column-two-thirds metadata-column">
+            <div class="app-c-publisher-metadata" lang="en">
+        <div class="app-c-published-dates " lang="en">
+        Published 12 September 2020
+    </div>
+
+          <div class="app-c-publisher-metadata__other">
+            <dl data-module="track-click">
+                <dt class="app-c-publisher-metadata__term">
+                  From:
+                </dt>
+                <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+                    <span class="app-c-publisher-metadata__definition-sentence"><a href="/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food &amp; Rural Affairs</a>
+                    </span>
+                </dd>
+            </dl>
+          </div>
+      </div>
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+        </div>
+      </div>
+    </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div id="toc" class="toc"></div>
+
+        <h2 id="does" class="govuk-heading-m">Environment Agency flood work</h2>
+
+        <p class="govuk-body">
+          The Environment Agency is committed to reducing the risk of flooding and coastal erosion to at least 300,000 homes.
+        </p>
+
+        <p class="govuk-body">
+          The Environment Agency will achieve this by investing £2.6 billion in a programme of work.
+        </p>
+
+        <h2 id="reports" class="govuk-heading-m">Flood and coastal erosion risk management reports</h2>
+
+          <p class="govuk-body">
+            The current 6 year flood and coastal erosion risk management (FCERM) investment programme runs from 1 April 2015 to 31 March 2021. The Environment Agency produces regular research reports to explain the work we are doing.
+          </p>
+
+            
+
+
+
+            <ul class="govuk-list">
+              <li><a href="/{{folder}}/{{linkAction}}/search-results_spec_pub-default?assets=_unchecked&datatype=_unchecked&environmental=_unchecked&flooding=_unchecked&status=_unchecked&policy=_unchecked&sources=_unchecked&name=">
+                Search for a flood and coastal erosion risk management report</a></li>
+            </ul>
+          
+
+
+
+
+
+
+
+
+
+            <p class="govuk-body">
+            We develop projects to reduce flooding and coastal erosion by working with local authorities, internal drainage boards and local communities.
+          </p>
+
+
+
+    </div>
+
+
+
+    <div class="govuk-grid-column-one-third">
+
+
+
+      <div class="gem-c-contextual-sidebar">
+
+
+        <div class="gem-c-related-navigation">
+
+            <h2 class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+              Related content
+            </h2>
+
+
+
+
+            <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-1e7b0f2c" data-module="gem-toggle">
+
+
+        <ul class="gem-c-related-navigation__link-list">
+
+              <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Related content link text</a></li>
+
+        </ul>
+      </nav>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,4 @@
+{% set status = [
+{"value": "Completed", "text": "Completed"},
+{"value": "Ongoing", "text": "Ongoing"}
+] %}
