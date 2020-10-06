@@ -26,7 +26,7 @@
         <a class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="false">
-        <a class="govuk-breadcrumbs__link" aria-current="false" href="/{{folder}}/search-results_spec_pub-default?topics=_unchecked&themes=_unchecked&status=_unchecked&name=">Flood and coastal erosion risk management reports</a>
+        <a class="govuk-breadcrumbs__link" aria-current="false" href="/{{folder}}/search-results_spec_pub-default?topics=_unchecked&themes=_unchecked&status=_unchecked&name=">Flood and coastal erosion risk management research reports</a>
       </li>
     </ol>
   </div>
@@ -53,9 +53,10 @@
       <div class="gir_meta">
 
         
-        {% if themes!="" %}<p>Themes: <b><em>{{ themes }}</em></b></p>{% endif %}
+        {% if themes!="" %}<p>Grouping: <b><em>{{ themes }}</em></b></p>{% endif %}
         {% if topics!="" %}<p>Topics: <b><em>{{ topics }}</em></b></p>{% endif %}
         {% if status!="" %}<p>Status: <b><em>{{ status }}</em></b></p>{% endif %}
+        <p>Project code: <b>{{ code }}</b></p>
         <p>Project completion date: <b>{{ date2 }}</b></p>
       </div>
 

@@ -43,7 +43,7 @@ Flood and coastal erosion risk management
       {% endif %}
 
       <h1 class="govuk-heading-xl" style="width:12em;">
-        Flood and coastal erosion risk management reports
+        Flood and coastal erosion risk management research reports
       </h1>
 
       <form class="form" action="{{formAction}}" method="get">
@@ -69,14 +69,9 @@ Flood and coastal erosion risk management
                         {{ result.summary }}
                       </p>
 
+                      {% if result.themes!="" %}<p class="gir_very_small">Grouping: {{ result.themes }}</p>{% endif %}
                       {% if result.topics!="" %}<p class="gir_very_small">Topics: {{ result.topics }}</p>{% endif %}
-                      {% if result.themes!="" %}<p class="gir_very_small">Themes: {{ result.themes }}</p>{% endif %}
-                      {% if result.environmental!="" %}<p class="gir_very_small">Environmental management and sustainability:  {{ result.environmental }}</p>{% endif %}
-                      {% if result.flooding!="" %}<p class="gir_very_small">Preparing, responding and recovering from flooding:  {{ result.flooding }}</p>{% endif %}
-                      {% if result.policy!="" %}<p class="gir_very_small">Policy, governance and funding: {{ result.policy }}</p>{% endif %}
-                      {% if result.sources!="" %}<p class="gir_very_small">Physical processes and sources of flooding: {{ result.sources }}</p>{% endif %}
                       {% if result.status!="" %}<p class="gir_very_small">Status: {{ result.status }}</p>{% endif %}
-
                       <p class="gir_very_small">Date: {{ result.date }}</p>
 
 
