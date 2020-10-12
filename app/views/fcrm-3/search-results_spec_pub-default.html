@@ -61,7 +61,7 @@ Flood and coastal erosion risk management
             {% include "./includes/filter-panel-default.html" %}
 
             {% set print = true %}
-            {% for result in results | sort(attribute="title") %}
+            {% for result in results | sort(attribute="id") %}
 
                 {% if print %}
                     <h3 class="gir_results_head"><a  style="text-decoration:none;" href="/{{folder}}/product-details-default/{{ result.id }}">{{ result.title }}</a></h3>
